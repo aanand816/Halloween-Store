@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/email.css?v=1" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Join Email</title>
+</head>
+<body>
+    <header>
+      <img src="./images/pumpkin.gif" alt="The Halloween Pumpkin" class="logo" />
+
+      <h1>The Halloween Store</h1>
+
+      <h3 style="font-size: 20px;">For the little Goblin in all of us!</h3>
+    </header>
+    <main>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Poduct_List.html">Poduct List</a></li>
+				<li><a href="Personal.html">Personal</a></li>
+				<li><a href="Decorating.html">Decorating Ideas</a></li>
+				<li><a href="email.html" class="active">Join Email</a></li>
+			</ul>
+		</nav>
+		<aside>
+			<a href="products/props.html">Props</a>
+			<a href="products/costumes.html">Costumes</a>
+			<a href="special.html">Special FX</a>
+			<a href="products/masks.html">Masks</a>
+		</aside>
+    <section>
+      <h2>Please enter the following information:</h2>
+      <form action="subscribe.html">
+          <label for="firstName">First name:</label>&nbsp;
+          <input type="text" id="firstName" name="firstName" required autofocus><br>
+          <label for="lastName">Last name:</label>&nbsp;
+          <input type="text" id="lastName" name="lastName" required><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">Email:</label>&nbsp;
+          <input type="email" id="email" name="email" required><br>
+          &nbsp;&nbsp;<label for="zipCode">Zip Code:</label>&nbsp;
+          <input type="text" id="zipCode" name="zipCode" placeholder="Optional but appreciated: 99999" pattern="\d{5}"><br>
+          <button type="submit">Subscribe</button><br><br>
+      </form>
+  </section>
+    </main>
+    <footer>&copy;2018 Ben Murach</footer>
+  </body>
+</html>
